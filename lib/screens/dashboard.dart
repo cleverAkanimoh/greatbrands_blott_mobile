@@ -16,8 +16,9 @@ class Dashboard extends StatefulWidget {
 
 class _DashboardState extends State<Dashboard> {
   final dio = Dio();
-  String firstName = "unknown";
+  String firstName = "";
 
+// uses stream builder so they'll be no need for a refresh
   Stream<List<NewsArticle>> getNewsArticlesStream() async* {
     try {
       final response = await dio.get(apiUrl);

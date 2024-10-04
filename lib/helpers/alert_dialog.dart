@@ -42,7 +42,7 @@ void showNotificationDialog(BuildContext context) {
               Container(
                 height: 48,
                 width: 1,
-                color: greyColor.withOpacity(.8),
+                color: mutedColor,
               ),
               Expanded(
                 child: TextButton(
@@ -50,7 +50,9 @@ void showNotificationDialog(BuildContext context) {
                       NavigatorPush.pushRemoveUntil(page: const Dashboard()),
                   child: Text(
                     'Allow',
-                    style: buttonTextStyle,
+                    style: buttonTextStyle.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
