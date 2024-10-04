@@ -26,6 +26,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
   mockito: ^5.4.4
+  icons_launcher: ^3.0.0
 
 flutter:
   uses-material-design: true
@@ -33,9 +34,10 @@ flutter:
   assets:
     - assets/images/
 
-flutter_launcher_icons:
-  android: "launcher_icon"
-  ios: true
-  remove_alpha_ios: true
-  min_sdk_android: 21
+icons_launcher:
   image_path: "assets/images/logo.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true

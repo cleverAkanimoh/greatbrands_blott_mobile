@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       title: brandName,
       builder: OneContext().builder,
       navigatorKey: OneContext().key,
-      color: Colors.white,
+      color: Colors.black,
       theme: ThemeData(
         scaffoldBackgroundColor: bgColor,
         colorScheme: ColorScheme.fromSeed(
