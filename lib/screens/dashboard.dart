@@ -36,7 +36,7 @@ class _DashboardState extends State<Dashboard> {
     } catch (e) {
       // Catch and log any errors
       debugPrint("Error fetching news articles: $e");
-      rethrow; // Yield an empty list in case of error
+      rethrow;
     }
   }
 
