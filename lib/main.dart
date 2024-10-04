@@ -8,14 +8,9 @@ void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatefulWidget {
+class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
-  @override
-  State<MainApp> createState() => _MainAppState();
-}
-
-class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +18,7 @@ class _MainAppState extends State<MainApp> {
       title: brandName,
       builder: OneContext().builder,
       navigatorKey: OneContext().key,
-      color: Colors.black,
+      color: Colors.white,
       theme: ThemeData(
         scaffoldBackgroundColor: bgColor,
         colorScheme: ColorScheme.fromSeed(
