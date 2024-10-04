@@ -1,0 +1,43 @@
+name: greatbrands_blott_mobile
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.7.0
+  get: ^4.6.6
+  google_fonts: ^6.2.1
+  intl: ^0.19.0
+  one_context: ^4.0.0
+  shared_preferences: ^2.3.2
+  skeletonizer: ^1.4.2
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  image_path: "assets/images/logo.png"
+  android_adaptive_icon_background: "#000000"
+  ios_icon_path: "assets/images/logo.png"
