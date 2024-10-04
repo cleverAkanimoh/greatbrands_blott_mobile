@@ -32,9 +32,10 @@ class _SplashState extends State<Splash> {
         color: Colors.black,
         child: Center(
           child: SizedBox(
-              height: 130,
-              width: 130,
-              child: Image.asset('assets/images/logo.png')),
+            height: 188,
+            width: 188,
+            child: Image.asset('assets/images/logo.png'),
+          ),
         ),
       ),
     );
