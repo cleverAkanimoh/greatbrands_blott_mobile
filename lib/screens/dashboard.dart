@@ -67,7 +67,7 @@ class _DashboardState extends State<Dashboard> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(smallWhiteSpace),
+          padding: const EdgeInsets.all(smallWhiteSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -80,7 +80,7 @@ class _DashboardState extends State<Dashboard> {
                   fontSize: 32,
                 ),
               ),
-              SizedBox(height: whiteSpace),
+              const SizedBox(height: whiteSpace),
               Expanded(
                 child: RefreshIndicator(
                   onRefresh: _refreshNews,
@@ -93,7 +93,7 @@ class _DashboardState extends State<Dashboard> {
                           physics: const BouncingScrollPhysics(),
                           itemCount: 20,
                           separatorBuilder: (context, index) =>
-                              SizedBox(height: smallWhiteSpace),
+                              const SizedBox(height: smallWhiteSpace),
                           itemBuilder: (context, index) {
                             return News(
                               article: NewsArticle(
@@ -129,7 +129,7 @@ class _DashboardState extends State<Dashboard> {
                           physics: const BouncingScrollPhysics(),
                           itemCount: newsArticles.length,
                           separatorBuilder: (context, index) =>
-                              SizedBox(height: smallWhiteSpace),
+                              const SizedBox(height: smallWhiteSpace),
                           itemBuilder: (context, index) {
                             NewsArticle newsArticle = newsArticles[index];
                             return News(article: newsArticle);

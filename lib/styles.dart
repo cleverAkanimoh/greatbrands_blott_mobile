@@ -1,7 +1,7 @@
 import 'package:greatbrands_blott_mobile/app_config.dart';
 import 'package:flutter/material.dart';
 
-TextStyle headingStyle = TextStyle(
+TextStyle headingStyle = const TextStyle(
   fontSize: headingText,
   fontWeight: FontWeight.w700,
 );

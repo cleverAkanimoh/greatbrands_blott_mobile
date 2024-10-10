@@ -29,7 +29,7 @@ class CustomButton extends StatelessWidget {
       child: Container(
         height: height ?? 48,
         width: width,
-        padding: EdgeInsets.symmetric(horizontal: extraSmallWhiteSpace),
+        padding: const EdgeInsets.symmetric(horizontal: extraSmallWhiteSpace),
         decoration: _buildButtonDecoration(),
         child: Center(
           child: _buildButtonText(),

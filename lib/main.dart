@@ -18,13 +18,8 @@ class MainApp extends StatelessWidget {
       title: brandName,
       builder: OneContext().builder,
       navigatorKey: OneContext().key,
-      color:Colors.black,
       theme: ThemeData(
         scaffoldBackgroundColor: bgColor,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: primaryColor,
-          surface: whiteColor,
-        ),
         fontFamily: GoogleFonts.roboto().fontFamily,
         useMaterial3: true,
       ),

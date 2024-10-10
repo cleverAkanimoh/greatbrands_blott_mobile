@@ -22,7 +22,7 @@ class _InputFieldState extends State<InputField> {
         controller: widget.controller,
         keyboardType: TextInputType.text,
         cursorColor: Colors.black,
-        style: TextStyle(color: Colors.black, fontSize: subHeadingText),
+        style: const TextStyle(color: Colors.black, fontSize: subHeadingText),
         decoration: InputDecoration(
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(color: mutedColor),

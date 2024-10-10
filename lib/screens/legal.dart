@@ -92,7 +92,7 @@ class _LegalNameState extends State<LegalName> {
           controller: firstNameController,
           placeholder: "First Name",
         ),
-        SizedBox(height: whiteSpace),
+        const SizedBox(height: whiteSpace),
         InputField(
           controller: lastNameController,
           placeholder: "Last Name",
@@ -119,17 +119,17 @@ class _LegalNameState extends State<LegalName> {
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
           child: Padding(
-            padding: EdgeInsets.all(smallWhiteSpace),
+            padding: const EdgeInsets.all(smallWhiteSpace),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Your legal name", style: headingStyle),
-                SizedBox(height: whiteSpace),
+                const SizedBox(height: whiteSpace),
                 Text(
                   "We need to know a bit about you so that we can create your account.",
                   style: paragraphStyle,
                 ),
-                SizedBox(height: whiteSpace),
+                const SizedBox(height: whiteSpace),
                 _buildInputFields(),
               ],
             ),

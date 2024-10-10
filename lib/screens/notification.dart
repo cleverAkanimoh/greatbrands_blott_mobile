@@ -11,7 +11,7 @@ class BlottNotification extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.all(whiteSpace),
+        padding: const EdgeInsets.all(whiteSpace),
         child: CustomButton(
           title: "Continue",
           onTap: () => showNotificationDialog(context),
@@ -19,18 +19,18 @@ class BlottNotification extends StatelessWidget {
       ),
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(whiteSpace),
+        padding: const EdgeInsets.all(whiteSpace),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/images/notification-icon.png'),
-              SizedBox(height: whiteSpace),
+              const SizedBox(height: whiteSpace),
               Text(
                 "Get the most out of Blott ✅",
                 style: headingStyle.copyWith(fontSize: 24),
               ),
-              SizedBox(height: smallWhiteSpace),
+              const SizedBox(height: smallWhiteSpace),
               Text(
                 "Allow notifications to stay in the loop with your payments, requests and groups.",
                 style: paragraphStyle,

@@ -125,7 +125,7 @@ class _NewsState extends State<News> {
   Widget _buildHeadline() {
     return Text(
       widget.article.headline,
-      style: TextStyle(
+      style: const TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: subHeadingText - 2,
         color: Colors.white,
